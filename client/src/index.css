@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: black; */
+  display: flex;
+}
+
+.ingredients-container {
+  border-left: 1.5px solid gray;
+  width: 25vw;
+  overflow: auto;
+  /* background-color: red; */
+}
+
+.craft-container {
+  width: 75vw;
+  position: relative;
+  overflow: hidden;
+  /* background-color: blue; */
+  /* display: flex;                
+  flex-direction: column;       
+  justify-content: center;       
+  align-items: center; 
+  position: relative; */
+}
+
+.ingredients-box {
+  background-color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  width: auto;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;       
+  white-space: nowrap;
+
+  user-select: none; /* For modern browsers */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
+.draggable {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.selected {
+  cursor: grabbing;
+  background-color: antiquewhite;
+}
