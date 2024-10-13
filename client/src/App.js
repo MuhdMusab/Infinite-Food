@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import PostToApiComponent from './PostToApiComponent';
+import MainContainer from './components/MainContainer';
 
 function App() {
   return (
     <div className="App">
-      <PostToApiComponent />
+      <MainContainer />
     </div>
   );
 }
